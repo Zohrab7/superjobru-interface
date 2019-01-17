@@ -1,0 +1,116 @@
+@import './variables.scss';
+@import './modal.scss';
+
+.Card {
+  background: white;
+  width: 100%;
+  min-height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  border-radius: 3px;
+  box-shadow: 0 8px 8px 0 $black-12, 0 0 8px 0 $black-12;
+  &__Container {
+    //background: lightseagreen;
+    min-width: calc(100% - 2 * 24px);
+    display: flex;
+    margin-top: 16px;
+    padding-bottom: 20px;
+    &__Left {
+      //background: lightyellow;
+      flex: 1 1;
+      h2 {
+        margin: 0;
+        font-size: 23px;
+        text-align: left;
+        color: rgba(0, 0, 0, 0.87);
+        line-height: 1.39;
+      }
+      h4 {
+        margin: 8px 0 0;
+        margin-right: 16px;
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: left;
+        color: rgba(0, 0, 0, 0.87);
+      }
+      &__Options {
+        display: flex;
+        height: auto;
+        &__Long {
+          display: flex;
+          width: auto;
+        }
+        .add {
+          color: $sj-green;
+          cursor: pointer;
+          &:hover {
+            color: $sj-dark-green;
+          }
+          &:active {
+            color: $sj-darker-green;
+          }
+        }
+      }
+      &__SubOptions {
+        display: flex;
+        //background: lightcoral;
+        width: auto;
+        font-size: 13px;
+        margin-left: 16px;
+        h4 {
+          font-size: 13px !important;
+        }
+      }
+      &__Disclosed {
+      }
+      &__LongText {
+        width: auto;
+        height: auto;
+        font-size: 23px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 16px;
+        letter-spacing: normal;
+        text-align: left;
+        color: rgba(0, 0, 0, 0.57);
+        h2 {
+          max-width: 600px;
+          min-height: auto;
+        }
+        .checked {
+          font-family: Roboto;
+          font-weight: normal;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 1.23;
+          letter-spacing: normal;
+          text-align: left;
+          color: rgba(0, 0, 0, 0.57);
+        }
+      }
+    }
+    &__Right {
+      //background: lightgreen;
+      display: flex;
+      flex-direction: column;
+      flex-basis: 249px;
+      flex-shrink: 1;
+      justify-content: flex-end;
+      &__Options {
+        //background: hotpink;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: auto;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.5px;
+        color: rgba(0, 0, 0, 0.37);
+      }
+    }
+  }
+}
